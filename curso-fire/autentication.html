@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Introdução ao Firebase</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link rel="stylesheet" href="https://bootswatch.com/3/simplex/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Autenticação</h1>
+
+    <div-col-md4>
+        <h3 class="text-center" id="displayName">Você não está autenticado!</h3>
+        <br>
+        <form>
+            <div class="form-group">
+                <label for="emailInput">E-mail</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="e-mail">
+            </div>
+            <div class="form-group">
+                <label for="passwordInput">Senha</label>
+                <input type="password" class="form-control" id="passwordInput" placeholder="senha">
+            </div>
+        </form>
+        <button class="btn btn-lg btn-block btn-primary" id="authEmailPassButton">Autenticar</button>
+        <button class="btn btn-lg btn-block btn-primary" id="createUserButton">Criar conta</button>
+        <br><br>
+        <p class="text-center">
+            <button class="btn btn-lg btn-block btn-default" id="logOutButton"><i class="fas fa-times"></i> Sair</button>
+        </p>
+        <p class="text-center"><small>-- ou --</small></p>
+        <p class="text-center">
+            <button class="btn btn-lg btn-default" id="authGitHubButton"><i class="fab fa-github fa-2x"></i></button>
+            <button class="btn btn-lg btn-primary" id="authFacebookButton"><i class="fab fa-facebook fa-2x"></i></button>
+            <button class="btn btn-lg btn-info" id="authTwitterButton"><i class="fab fa-twitter fa-2x"></i></button>
+            <button class="btn btn-lg btn-warning" id="authGoogleButton"><i class="fab fa-google fa-2x"></i></button>
+            <button class="btn btn-lg btn-danger" id="authAnonymouslyButton"><i class="fas fa-user fa-2x"></i></button>
+        </p>
+
+    </div>
+    <br><br>
+    <p class="text-center">
+        <a class="btn btn-lg btn-default" href="index.html"><i class="fas fa-home fa-2x"></i></a>
+    </p>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/autentication.js"></script>
+</body>
+
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                              
