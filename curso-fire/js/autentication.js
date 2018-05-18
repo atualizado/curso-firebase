@@ -110,7 +110,7 @@ authAnonymouslyButton.addEventListener('click', function() {
     .signInAnonymously()
     .then(function (result){
         console.log(result);
-        displayName.innerText = 'Bem vindo, desconhecido';
+        displayName.innerText = 'Bem vindo, Anônimo! <br>Vejo que não quer se identificar, não tem problema.';
         alert('Autenticado Anonimamente');
     })
     .catch(function(error){
